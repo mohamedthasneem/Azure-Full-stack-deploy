@@ -1,0 +1,25 @@
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="display-4">Employees</h1>
+    <div class="col-md-6">
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Designation</th>
+          <th>Salary</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees">
+                <td hidden>{{employee.empId}}</td>
+                <td>{{employee.name}}</td>
+                <td>{{employee.designation}}</td>
+                <td>{{employee.salary}}</td>
+                <td><button class="btn btn-danger" (click)="deleteEmployee(employee.empId)"> Delete</button></td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
