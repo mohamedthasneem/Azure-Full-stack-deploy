@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 
 export class HttpClientService {
 
-  private baseUrl = 'http://localhost:8080/api';
+  private baseUrl = 'https://employeemsfrontend.azurewebsites.net/api';
 
   constructor(private http: HttpClient) { }
 
